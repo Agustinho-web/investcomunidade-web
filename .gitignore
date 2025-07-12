@@ -1,65 +1,103 @@
-# gitignore template for Drupal 8 projects
-#
-# earlier versions of Drupal are tracked in `community/PHP/`
-#
-# follows official upstream conventions:
-# https://www.drupal.org/docs/develop/using-composer
+# 📲 Invest+ Comunidade
 
-# Ignore configuration files that may contain sensitive information
-/web/sites/*/*settings*.php
-/web/sites/*/*services*.yml
+Plataforma de investimento colaborativo voltada para pequenos investidores em Moçambique, com suporte em tempo real, pagamentos via M-Pesa e Emola, e área administrativa para controle total do sistema.
 
-# Ignore paths that may contain user-generated content
-/web/sites/*/files
-/web/sites/*/public
-/web/sites/*/private
-/web/sites/*/files-public
-/web/sites/*/files-private
+---
 
-# Ignore paths that may contain temporary files
-/web/sites/*/translations
-/web/sites/*/tmp
-/web/sites/*/cache
+## 📌 Funcionalidades
 
-# Ignore drupal core (if not versioning drupal sources)
-/web/vendor
-/web/core
-/web/modules/README.txt
-/web/modules/contrib
-/web/profiles/README.txt
-/web/profiles/contrib
-/web/sites/development.services.yml
-/web/sites/example.settings.local.php
-/web/sites/example.sites.php
-/web/sites/README.txt
-/web/themes/README.txt
-/web/themes/contrib
-/web/.csslintrc
-/web/.editorconfig
-/web/.eslintignore
-/web/.eslintrc.json
-/web/.gitattributes
-/web/.htaccess
-/web/.ht.router.php
-/web/autoload.php
-/web/composer.json
-/web/composer.lock
-/web/example.gitignore
-/web/index.php
-/web/INSTALL.txt
-/web/LICENSE.txt
-/web/README.txt
-/web/robots.txt
-/web/update.php
-/web/web.config
+- Cadastro com nome, número de telefone e senha
+- Login seguro com validação
+- Idioma Português 🇵🇹 e Inglês 🇺🇸 (selecionável)
+- Painel do usuário com:
+  - Saldo atual
+  - Total investido
+  - Bônus de boas-vindas de 3%
+- Investimentos de 100MT a 10.000MT
+  - Retorno fixo de 80%
+- Levantamento mínimo: 110MT (com aprovação manual)
+- Histórico de transações
+- Suporte via WhatsApp e chamada
 
-# Ignore vendor dependencies and scripts
-/vendor
-/composer.phar
-/composer
-/robo.phar
-/robo
-/drush.phar
-/drush
-/drupal.phar
-/drupal
+---
+
+## 💳 Pagamentos
+
+Atualmente, os pagamentos são **manuais**, via transferência para:
+
+- **M-Pesa:** `841160398`  
+- **Emola:** `874679534`  
+- **Nome nas contas:** Agustinho Hortencilio
+
+### Procedimento:
+1. O usuário realiza o pagamento.
+2. Envia o comprovativo para o WhatsApp do suporte: `+258 874 679 534`
+3. Um agente verifica e credita o valor manualmente no sistema.
+
+---
+
+## 👤 Área Administrativa
+
+### 👑 Administrador Principal
+- Acesso completo ao sistema
+- Gerencia agentes
+- Aprova usuários e transações
+- Visualiza relatórios
+
+### 🧑‍💼 Agentes de Suporte
+- Recebem comprovativos
+- Confirmam pagamentos
+- Aprovam levantamentos
+- Oferecem atendimento ao cliente
+
+---
+
+## 📞 Suporte ao Cliente
+
+- 📞 Chamada direta: `+258 834 751 275`  
+- 💬 WhatsApp: `+258 874 679 534`  
+- Botões no app e site abrem diretamente os canais de suporte
+
+---
+
+## 🖌️ Interface e Design
+
+- Cores principais: Azul 💙, Verde 💚 e Branco 🤍  
+- Design leve, moderno e responsivo (PC e celular)  
+- Interface multilíngue  
+- Mensagens de boas-vindas personalizadas
+
+---
+
+## 🚀 Publicação
+
+- ✅ App Android será publicado na **Play Store**
+- ✅ Site será publicado em domínio visível no Google
+- ✅ Sistema será entregue 100% funcional com acesso total para o dono
+
+---
+
+## 🔐 Proprietário do Projeto
+
+**Agustinho Hortencilio**  
+E-mail: agustinhohortencilio@gmail.com  
+WhatsApp: +258 874 679 534
+
+---
+
+## 📌 Observações Finais
+
+> Este sistema tem como objetivo facilitar investimentos simples e acessíveis para a comunidade, com gestão transparente e suporte confiável.  
+> **Todos os pagamentos são verificados manualmente.**
+
+---
+
+## ⚙️ Tecnologias sugeridas (para desenvolvedor)
+
+- Frontend: React.js / HTML + TailwindCSS
+- Backend: PHP ou Node.js
+- Banco de dados: MySQL
+- Hospedagem: InfinityFree / Hostinger / Vercel / Firebase (opcional)
+- App Android: Flutter ou React Native
+
+---
